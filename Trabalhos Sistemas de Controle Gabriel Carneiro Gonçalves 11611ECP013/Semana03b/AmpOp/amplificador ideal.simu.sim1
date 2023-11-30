@@ -1,0 +1,31 @@
+<circuit version="1.0.0-SR0" rev="1320" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="opAmp" CircId="opAmp-65" mainComp="false" Show_id="false" Show_Val="false" Pos="840,468" rotation="0" hflip="1" vflip="1" label="opAmp-65" idLabPos="-16,-32" labelrot="0" valLabPos="-16,20" valLabRot="0" Gain="1000" Out_Imped="1e-14 Ω" Volt_Pos="5 V" Volt_Neg="-5 V" Power_Pins="false" Switch_Pins="false" />
+
+<item itemtype="Rail" CircId="Rail-67" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="732,476" rotation="0" hflip="1" vflip="1" label="Rail-67" idLabPos="-16,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="1 V" />
+
+<item itemtype="Resistor" CircId="Resistor-68" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="784,476" rotation="0" hflip="1" vflip="1" label="Resistor-68" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="1 kΩ" />
+
+<item itemtype="Resistor" CircId="Resistor-71" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="844,516" rotation="0" hflip="1" vflip="1" label="Resistor-71" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="3 kΩ" />
+
+<item itemtype="Ground" CircId="Ground-76" mainComp="false" Show_id="false" Show_Val="false" Pos="684,476" rotation="0" hflip="1" vflip="1" label="Ground-76" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Probe" CircId="Probe-78" mainComp="false" Show_id="false" Show_Val="true" Pos="824,500" rotation="-45" hflip="1" vflip="1" label="Probe-78" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
+
+<item itemtype="Probe" CircId="Probe-79" mainComp="false" Show_id="false" Show_Val="true" Pos="892,452" rotation="-45" hflip="1" vflip="1" label="Probe-79" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
+
+<item itemtype="Node" CircId="Node-73" mainComp="false" Pos="808,476" />
+
+<item itemtype="Connector" uid="Connector-69" startpinid="Rail-67-outnod" endpinid="Resistor-68-lPin" pointList="748,476,768,476" />
+
+<item itemtype="Connector" uid="Connector-70" startpinid="Resistor-68-rPin" endpinid="Node-73-0" pointList="800,476,808,476" />
+
+<item itemtype="Connector" uid="Connector-72" startpinid="Resistor-71-lPin" endpinid="Node-73-1" pointList="828,516,808,516,808,476" />
+
+<item itemtype="Connector" uid="Connector-74" startpinid="Node-73-2" endpinid="opAmp-65-inputInv" pointList="808,476,816,476" />
+
+<item itemtype="Connector" uid="Connector-75" startpinid="Resistor-71-rPin" endpinid="opAmp-65-output" pointList="860,516,876,516,876,468,864,468" />
+
+<item itemtype="Connector" uid="Connector-77" startpinid="Ground-76-Gnd" endpinid="opAmp-65-inputNinv" pointList="684,460,816,460" />
+
+</circuit>
